@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul - Data Analyst & Storyteller</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Rahul <span>Data Analyst</span></h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="assets/cv.pdf" class="cv-btn" download><i class="fas fa-download"></i> Download CV</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="position:relative; overflow:hidden;">
+        <!-- UnicornStudio background embed -->
+        <div data-us-project="Bl2TX96ajBDPbBAEnneB"
+             style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1; pointer-events:none;">
+        </div>
+        <script type="text/javascript">
+            !function(){
+                if(!window.UnicornStudio){
+                    window.UnicornStudio={isInitialized:!1};
+                    var i=document.createElement("script");
+                    i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",
+                    i.onload=function(){
+                        window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)
+                    },
+                    (document.head || document.body).appendChild(i)
+                }
+            }();
+        </script>
+        <!-- Hero content (z-index:2 to appear above background) -->
+        <div class="hero-container" style="position:relative; z-index:2;">
+            <div class="hero-content">
+                <h1 class="hero-title highlight">
+                    Hi, I'm Rahul
+                </h1>
+                <h2 class="hero-subtitle">Data Analyst & Data Storyteller</h2>
+                <p class="hero-description">
+                    Transforming raw data into compelling stories and actionable insights. 
+                    Passionate about uncovering patterns that drive business decisions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-kaggle"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="assets/profile.jpg" alt="Rahul Profile" class="profile-img">
+                    <div class="floating-elements">
+                        <div class="floating-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="floating-icon"><i class="fas fa-database"></i></div>
+                        <div class="floating-icon"><i class="fas fa-brain"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As a passionate Data Analyst and Data Storyteller, I specialize in transforming complex datasets 
+                        into clear, actionable insights. With expertise in SQL, Machine Learning, and Data Visualization, 
+                        I help organizations make data-driven decisions.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-database"></i> Data Management</h3>
+                            <div class="skills">
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-level="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-robot"></i> Machine Learning</h3>
+                            <div class="skills">
+                                <span class="skill-tag">Python </span>
+                                <span class="skill-tag">Scikit-learn</span>
+                                <span class="skill-tag">Pandas</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-level="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+                            <div class="skills">
+                                <span class="skill-tag">Tableau</span>
+                                <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">Matplotlib</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-level="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-analytics"></i> Analytics</h3>
+                            <div class="skills">
+                                <span class="skill-tag">Statistical Analysis</span>
+                                <span class="skill-tag">A/B Testing</span>
+                                <span class="skill-tag">Excel</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-level="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="visualization">Data Visualization</button>
+                <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- SQL Projects -->
+                <div class="project-card" data-category="sql">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Tax Tracker System ">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tax Tracker System </h3>
+                        <p>Designed a secure tax-tracking system for companies and customers, enabling efficient tax data management with role
+based access and real-time tracking. </p>
+                        <div class="project-tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag"> Python</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="sql">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="STUDENT MANAGEMENT SYSTEM ">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>STUDENT MANAGEMENT SYSTEM</h3>
+                        <p>A student management system that simplifies academic tasks like course registration, grading, and tracking student progress.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">MySql</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML Project -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="assets/project3.png" alt="Enhanced Brain Tumor Detection With Xception: A Deep Learning Approach.">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Enhanced Brain Tumor Detection With Xception: A Deep Learning Approach.</h3>
+                        <p>A deep learning model was developed to detect brain tumors from medical images, improving diagnostic precision through data augmentation and robust evaluation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Xception deep learning model</span>
+                            <span class="tag">TensorFlow / Keras</span>
+                            <span class="tag">ImageDataGenerator</span>
+                            <span class="tag">Seaborn</span>
+                            <span class="tag">scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Visualization Projects -->
+                <div class="project-card" data-category="visualization">
+                    <div class="project-image">
+                        <img src="assets/project4.png" alt="Airbnb Listings – Exploratory Data Analysis (EDA">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Airbnb Listings – Exploratory Data Analysis (EDA)</h3>
+                        <p>Performed EDA on  39,000+Airbnb listings in NYC, analyzing spatial distribution, pricing trends, and room-type popularity to provide actionable insights for hosts and travelers. </p>
+                        <div class="project-tags">
+                            <span class="tag"> SQL</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="visualization">
+                    <div class="project-image">
+                        <img src="assets/project5.png" alt="Indian Premier League (IPL) Data Analysis (2008–2017)">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Indian Premier League (IPL) Data Analysis (2008–2017)</h3>
+                        <p>Conducted in-depth analysis of IPL matches, identifying team performance trends, run-rate variations, and match 
+outcomes using data visualization techniques.</p>
+                        <div class="project-tags">
+                            <span class="tag"> Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Data Analytics Project -->
+                <div class="project-card featured" data-category="analytics">
+                    <div class="featured-badge">Featured</div>
+                    <div class="project-image">
+                        <img src="assets/project6.png" alt="Biodiversity Risk Assessment Tool">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Biodiversity Risk Assessment Tool</h3>
+                        <p>Developed a web-based tool to help hotels in New Jersey assess biodiversity risks within a 5-mile radius, integrating 
+geocoding, interactive mapping, and user management for compliance tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag"> Leaflet.js</span>
+                            <span class="tag">  Geocoding API </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research Paper</h2>
+            <div class="research-content">
+                <div class="research-paper">
+                    <div class="paper-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="paper-content">
+                        <h3>Predictive Analytics in Customer Behavior: A Machine Learning Approach</h3>
+                        <p class="paper-authors">Rahul et al.</p>
+                        <p class="paper-journal">International Journal of Data Science • 2024</p>
+                        <p class="paper-abstract">
+                            This research explores the application of machine learning algorithms in predicting customer behavior patterns. 
+                            The study presents a novel approach combining ensemble methods with feature engineering techniques to achieve 
+                            superior prediction accuracy in customer analytics.
+                        </p>
+                        <div class="paper-actions">
+                            <a href="#" class="btn btn-primary">Read Paper</a>
+                            <a href="#" class="btn btn-secondary">Download PDF</a>
+                        </div>
+                        <div class="paper-metrics">
+                            <span class="metric"><i class="fas fa-eye"></i> 1,250 views</span>
+                            <span class="metric"><i class="fas fa-download"></i> 85 downloads</span>
+                            <span class="metric"><i class="fas fa-quote-left"></i> 12 citations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting data projects. Let's discuss how I can help your organization make data-driven decisions.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>rahul.dataanalyst@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>New York, NY</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-kaggle"></i></a>
+                    </div>
+
+                    <div class="whatsapp-contact">
+                        <a href="https://wa.me/+12038041989?text=Hi%20Rahul!%20I%20would%20like%20to%20discuss%20a%20data%20analytics%20project%20with%20you." target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Contact via WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="google-form-section">
+                    <div class="form-card">
+                        <div class="form-header">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h3>Get in Touch</h3>
+                            <p>Fill out our contact form to share your project details and requirements.</p>
+                        </div>
+                        <a href="https://forms.google.com/" target="_blank" class="google-form-btn">
+                            <i class="fab fa-google"></i>
+                            <span>Fill Contact Form</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <div class="form-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Quick & Easy</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Secure</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Rahul. All rights reserved.</p>
+                <p>Designed and Devlouped by devANTR with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

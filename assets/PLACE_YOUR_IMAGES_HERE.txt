@@ -1,0 +1,38 @@
+📸 REQUIRED IMAGES FOR PORTFOLIO
+
+Please add the following images to this assets/ folder:
+
+PROFILE IMAGE:
+- profile.jpg (300x300px recommended)
+  → Your professional headshot photo
+
+PROJECT IMAGES:
+- project1.jpg → E-commerce Database Analysis (SQL project)
+- project2.jpg → Financial Data Warehouse (SQL project)  
+- project3.jpg → Customer Churn Prediction (ML project)
+- project4.jpg → Sales Performance Dashboard (Visualization project)
+- project5.jpg → Marketing Analytics Dashboard (Visualization project)
+- project6.jpg → Market Research Analytics (Analytics project - Featured)
+
+CV/RESUME:
+- cv.pdf → Your resume/CV file for download
+
+IMAGE SPECIFICATIONS:
+- Format: JPG or PNG
+- Project images: 400x300px (4:3 aspect ratio) recommended
+- Profile image: 300x300px (square) recommended
+- File size: Keep under 500KB each for better loading speed
+
+OPTIMIZATION TIPS:
+- Use tools like TinyPNG or JPEG-Optimizer to compress images
+- Ensure good contrast and readability
+- Use professional, high-quality images
+- Consider using screenshots from actual projects
+
+After adding your images, you can delete this text file.
+
+📝 Don't forget to also update:
+- Personal information in index.html
+- Email settings in send_email.php
+- Social media links
+- Project descriptions and links
