@@ -642,7 +642,7 @@ body {
 .experience-card {
     background: var(--bg-secondary);
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 2rem;
     box-shadow: var(--shadow-medium);
     transition: all 0.3s ease;
     position: relative;
