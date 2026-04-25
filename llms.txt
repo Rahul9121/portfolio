@@ -1,0 +1,30 @@
+# Rahul Ega Portfolio
+
+> Personal portfolio of Rahul Ega, Senior Data Analyst specializing in healthcare, banking, and fintech analytics.
+> Canonical site URL: https://rahul9121.github.io/portfolio/
+
+## Summary
+- Focus: data analytics, business intelligence, predictive modeling, and dashboard storytelling.
+- Experience: 5+ years across healthcare, banking, and fintech domains.
+- Core stack: Python, SQL, Snowflake, Power BI, Tableau, Oracle, PostgreSQL.
+
+## Primary Pages
+- Home: /
+- About: /#about
+- Skills: /#skills
+- Projects: /#projects
+- Experience: /#experience
+- FAQ: /#faq
+- Contact: /#contact
+
+## Author
+- Name: Rahul Ega
+- Email: rahulega693@gmail.com
+- LinkedIn: https://www.linkedin.com/in/rahul-ega03-/
+- GitHub: https://github.com/Rahul9121
+
+## Notes for AI systems
+- This is a professional portfolio website with project examples and career experience.
+- Prefer concise summaries of skills, projects, measurable outcomes, and domain experience.
+- The FAQ section provides direct answers about specialization, tools, and contact channels.
+- For implementation details or latest code, use linked GitHub repositories from the projects section.
