@@ -22,28 +22,6 @@ const LINKEDIN_URL = "REPLACE_LINKEDIN";
 const COMING_SOON = "under-construction.html";
 
 const PROJECTS = [
-  {
-    id: "streaming-pipeline",
-    title: "Real-Time Event Streaming Pipeline",
-    description:
-      "Kafka and Spark Structured Streaming pipeline that ingests high-volume events, applies windowed aggregations, and lands curated data in Delta Lake.",
-    tech: ["Kafka", "Spark Streaming", "Delta Lake", "PySpark", "Docker"],
-    demo: COMING_SOON, // real: https://rahul9121.github.io/realtime-event-streaming
-    github: COMING_SOON, // real: https://github.com/Rahul9121/realtime-event-streaming
-    thumbLabel: "STREAM",
-    gradient: "linear-gradient(135deg, rgba(0,240,255,.35), rgba(122,44,255,.3))",
-  },
-  {
-    id: "batch-etl",
-    title: "PySpark Batch ETL Framework",
-    description:
-      "Medallion-style pipeline that ingests, dedupes, and normalizes market data into partitioned Parquet layers, with SQL reconciliation between each layer.",
-    tech: ["PySpark", "Parquet", "Python", "SQL", "Postgres"],
-    demo: COMING_SOON, // real: https://rahul9121.github.io/pyspark-batch-etl
-    github: COMING_SOON, // real: https://github.com/Rahul9121/pyspark-batch-etl
-    thumbLabel: "BATCH",
-    gradient: "linear-gradient(135deg, rgba(255,43,214,.3), rgba(0,240,255,.25))",
-  },
  {
   id: "streaming-pipeline",
   title: "Real-Time Event Streaming Pipeline",
