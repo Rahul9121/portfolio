@@ -8,8 +8,8 @@
  * ========================================================================== */
 const CONTACT_EMAIL = "rahulega695@gmail.com";
 const WHATSAPP_NUMBER = "12038041989"; // country code + number, no + or spaces
-// EDIT: LinkedIn profile URL (also search REPLACE_LINKEDIN in index.html)
-const LINKEDIN_URL = "REPLACE_LINKEDIN";
+// LinkedIn profile URL (also wired in index.html contact + footer)
+const LINKEDIN_URL = "https://www.linkedin.com/in/rahul-ega03-";
 
 /* ============================================================================
  * EDIT ME: projects (rendered into #projectsGrid)
