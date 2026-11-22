@@ -13,115 +13,133 @@ const LINKEDIN_URL = "REPLACE_LINKEDIN";
 
 /* ============================================================================
  * EDIT ME: projects (rendered into #projectsGrid)
+ * Exactly 9 unique cards: 6 live GitHub projects + 3 upcoming.
  * demo → https://rahul9121.github.io/[repo]
  * github → https://github.com/Rahul9121/[repo]
+ * For upcoming work, set status: "upcoming" and keep demo/github as COMING_SOON.
  * ========================================================================== */
-// While projects are being built, every Live Demo / GitHub button opens the
-// under-construction page. When a project ships, replace COMING_SOON on that
-// project with its real URL (kept in the // real: comments below).
 const COMING_SOON = "under-construction.html";
 
 const PROJECTS = [
- {
-  id: "streaming-pipeline",
-  title: "Real-Time Event Streaming Pipeline",
-  description:
-    "Kafka and Spark Structured Streaming pipeline that ingests high-volume events, applies windowed aggregations, and lands curated data in Delta Lake.",
-  tech: ["Kafka", "Spark Streaming", "Delta Lake", "PySpark", "Docker"],
-  demo: "https://rahul9121.github.io/realtime-event-streaming",
-  github: "https://github.com/Rahul9121/realtime-event-streaming",
-  thumbLabel: "STREAM",
-  gradient: "linear-gradient(135deg, rgba(0,240,255,.35), rgba(122,44,255,.3))",
-},
-{
-  id: "batch-etl",
-  title: "PySpark Batch ETL Framework",
-  description:
-    "Medallion-style pipeline that ingests, dedupes, and normalizes market data into partitioned Parquet layers, with SQL reconciliation between each layer.",
-  tech: ["PySpark", "Parquet", "Python", "SQL", "Postgres"],
-  demo: "https://rahul9121.github.io/pyspark-batch-etl",
-  github: "https://github.com/Rahul9121/pyspark-batch-etl",
-  thumbLabel: "BATCH",
-  gradient: "linear-gradient(135deg, rgba(255,43,214,.3), rgba(0,240,255,.25))",
-},
-{
-  id: "dbt-warehouse",
-  title: "dbt Analytics Warehouse",
-  description:
-    "Dimensional models with incremental loads, data tests, and auto-generated docs and lineage for a trusted analytics warehouse.",
-  tech: ["dbt", "DuckDB", "SQL", "CI/CD", "GitHub Pages"],
-  demo: "https://rahul9121.github.io/dbt-analytics-warehouse",
-  github: "https://github.com/Rahul9121/dbt-analytics-warehouse",
-  thumbLabel: "WAREHOUSE",
-  gradient: "linear-gradient(135deg, rgba(182,255,0,.28), rgba(0,240,255,.22))",
-},
-{
-  id: "airflow-elt",
-  title: "Airflow ELT with Data Quality Gates",
-  description:
-    "One DAG runs ingest, Spark transform, dbt, and quality checks with retries and failure alerts, and publishes an HTML data-quality report.",
-  tech: ["Airflow", "PySpark", "dbt", "Docker", "pytest"],
-  demo: "https://rahul9121.github.io/airflow-elt-data-quality",
-  github: "https://github.com/Rahul9121/airflow-elt-data-quality",
-  thumbLabel: "ORCH",
-  gradient: "linear-gradient(135deg, rgba(122,44,255,.35), rgba(255,43,214,.22))",
-},
-{
-  id: "lakehouse-lab",
-  title: "Lakehouse and Spark Performance Lab",
-  description:
-    "Benchmarks Parquet, Avro, ORC, and Delta, then measures how partitioning, broadcast joins, and compaction cut Spark runtimes.",
-  tech: ["Delta Lake", "Parquet", "Avro", "ORC", "Spark Tuning"],
-  demo: "https://rahul9121.github.io/lakehouse-spark-performance-lab",
-  github: "https://github.com/Rahul9121/lakehouse-spark-performance-lab",
-  thumbLabel: "LAKEHOUSE",
-  gradient: "linear-gradient(135deg, rgba(0,240,255,.2), rgba(182,255,0,.28))",
-},
-{
-  id: "hive-migration",
-  title: "Hive-to-PySpark Migration and CI/CD",
-  description:
-    "Rewrites HiveQL jobs as PySpark and validates source-to-target counts and key fields, shipped with Docker, Terraform, and GitHub Actions.",
-  tech: ["PySpark", "Hive", "ADLS (Azurite)", "Terraform", "CI/CD"],
-  demo: "https://rahul9121.github.io/hive-to-pyspark-migration",
-  github: "https://github.com/Rahul9121/hive-to-pyspark-migration",
-  thumbLabel: "MIGRATION",
-  gradient: "linear-gradient(135deg, rgba(255,43,214,.28), rgba(122,44,255,.3))",
-},
   {
-  id: "sql-playground",
-  title: "SQL Reconciliation Playground",
-  description:
-    "Run real SQL in the browser on sample trade and ledger data with DuckDB-WASM, no server needed. Ten ready-made queries cover duplicates, cross-system mismatches, sequence gaps, running totals, and latest record per key.",
-  tech: ["DuckDB-WASM", "SQL", "JavaScript", "GitHub Pages"],
-  demo: COMING_SOON, // real: https://rahul9121.github.io/sql-reconciliation-playground
-  github: COMING_SOON, // real: https://github.com/Rahul9121/sql-reconciliation-playground
-  thumbLabel: "SQL",
-  gradient: "linear-gradient(135deg, rgba(0,240,255,.3), rgba(182,255,0,.25))",
-},
-{
-  id: "public-data-pipeline",
-  title: "Self-Updating Public Data Pipeline",
-  description:
-    "Python job on a daily GitHub Actions schedule that pulls a public earthquake feed, validates the schema, loads only new records into a small database, and rebuilds a dashboard with a last-updated timestamp.",
-  tech: ["Python", "GitHub Actions", "SQLite", "Schema Validation", "GitHub Pages"],
-  demo: COMING_SOON, // real: https://rahul9121.github.io/self-updating-data-pipeline
-  github: COMING_SOON, // real: https://github.com/Rahul9121/self-updating-data-pipeline
-  thumbLabel: "AUTO",
-  gradient: "linear-gradient(135deg, rgba(182,255,0,.3), rgba(122,44,255,.25))",
-},
-{
-  id: "metadata-ingestion",
-  title: "Metadata-Driven Ingestion Framework",
-  description:
-    "ADF-style Python framework where each source (CSV, JSON, or API) is described in a config file. It handles retries, conditional branching, error handling, and run logging, and publishes a run-log and lineage page.",
-  tech: ["Python", "YAML Config", "Retries", "Logging", "GitHub Pages"],
-  demo: COMING_SOON, // real: https://rahul9121.github.io/metadata-driven-ingestion
-  github: COMING_SOON, // real: https://github.com/Rahul9121/metadata-driven-ingestion
-  thumbLabel: "INGEST",
-  gradient: "linear-gradient(135deg, rgba(122,44,255,.3), rgba(0,240,255,.25))",
-},
+    id: "streaming-pipeline",
+    title: "Real-Time Event Streaming Pipeline",
+    description:
+      "Real-time trade event streaming with Redpanda, Spark Structured Streaming, Delta Lake bronze/silver/gold layers, checkpointing, and a recorded-run replay dashboard.",
+    tech: ["Kafka / Redpanda", "Spark Streaming", "Delta Lake", "PySpark", "Docker"],
+    demo: "https://rahul9121.github.io/realtime-event-streaming/",
+    github: "https://github.com/Rahul9121/realtime-event-streaming",
+    thumbLabel: "STREAM",
+    status: "live",
+    gradient: "linear-gradient(135deg, rgba(0,240,255,.35), rgba(122,44,255,.3))",
+  },
+  {
+    id: "batch-etl",
+    title: "PySpark Batch ETL Framework",
+    description:
+      "Medallion PySpark batch ETL for capital-markets trade data across bronze/silver/gold layers, with partitioned Parquet and SQL reconciliation between stages.",
+    tech: ["PySpark", "Parquet", "Python", "SQL", "Postgres"],
+    demo: "https://rahul9121.github.io/pyspark-batch-etl/",
+    github: "https://github.com/Rahul9121/pyspark-batch-etl",
+    thumbLabel: "BATCH",
+    status: "live",
+    gradient: "linear-gradient(135deg, rgba(255,43,214,.3), rgba(0,240,255,.25))",
+  },
+  {
+    id: "dbt-warehouse",
+    title: "dbt Analytics Warehouse",
+    description:
+      "Dimensional analytics warehouse for capital-markets trade data built with dbt on DuckDB — incremental models, tests, docs, and lineage.",
+    tech: ["dbt", "DuckDB", "SQL", "CI/CD", "GitHub Pages"],
+    demo: "https://rahul9121.github.io/dbt-analytics-warehouse/",
+    github: "https://github.com/Rahul9121/dbt-analytics-warehouse",
+    thumbLabel: "WAREHOUSE",
+    status: "live",
+    gradient: "linear-gradient(135deg, rgba(182,255,0,.28), rgba(0,240,255,.22))",
+  },
+  {
+    id: "airflow-elt",
+    title: "Airflow ELT with Data Quality Gates",
+    description:
+      "Airflow ELT pipeline with PySpark, dbt/DuckDB, and hard data quality gates — one DAG for ingest, transform, tests, retries, and an HTML quality report.",
+    tech: ["Airflow", "PySpark", "dbt", "Docker", "pytest"],
+    demo: "https://rahul9121.github.io/airflow-elt-data-quality/",
+    github: "https://github.com/Rahul9121/airflow-elt-data-quality",
+    thumbLabel: "ORCH",
+    status: "live",
+    gradient: "linear-gradient(135deg, rgba(122,44,255,.35), rgba(255,43,214,.22))",
+  },
+  {
+    id: "lakehouse-lab",
+    title: "Lakehouse and Spark Performance Lab",
+    description:
+      "Local Spark/Delta lakehouse benchmarks covering formats, partitions, joins, small files, ACID merge, and time travel — measuring real runtime wins.",
+    tech: ["Delta Lake", "Parquet", "Avro", "ORC", "Spark Tuning"],
+    demo: "https://rahul9121.github.io/lakehouse-spark-performance-lab/",
+    github: "https://github.com/Rahul9121/lakehouse-spark-performance-lab",
+    thumbLabel: "LAKEHOUSE",
+    status: "live",
+    gradient: "linear-gradient(135deg, rgba(0,240,255,.2), rgba(182,255,0,.28))",
+  },
+  {
+    id: "hive-migration",
+    title: "Hive-to-PySpark Migration and CI/CD",
+    description:
+      "Hive-to-PySpark migration with automated source-to-target validation, Azurite landing zone, Terraform stubs, and a CI-published report.",
+    tech: ["PySpark", "Hive", "ADLS (Azurite)", "Terraform", "CI/CD"],
+    demo: "https://rahul9121.github.io/hive-to-pyspark-migration/",
+    github: "https://github.com/Rahul9121/hive-to-pyspark-migration",
+    thumbLabel: "MIGRATION",
+    status: "live",
+    gradient: "linear-gradient(135deg, rgba(255,43,214,.28), rgba(122,44,255,.3))",
+  },
+  {
+    id: "sql-playground",
+    title: "SQL Reconciliation Playground",
+    description:
+      "Run real SQL in the browser on sample trade and ledger data with DuckDB-WASM. Ready-made queries cover duplicates, cross-system mismatches, sequence gaps, and latest record per key.",
+    tech: ["DuckDB-WASM", "SQL", "JavaScript", "GitHub Pages"],
+    demo: COMING_SOON, // real: https://rahul9121.github.io/sql-reconciliation-playground
+    github: COMING_SOON, // real: https://github.com/Rahul9121/sql-reconciliation-playground
+    thumbLabel: "SQL",
+    status: "upcoming",
+    gradient: "linear-gradient(135deg, rgba(0,240,255,.3), rgba(182,255,0,.25))",
+  },
+  {
+    id: "public-data-pipeline",
+    title: "Self-Updating Public Data Pipeline",
+    description:
+      "Daily GitHub Actions job that pulls a public data feed, validates schema, loads only new records, and rebuilds a dashboard with a last-updated timestamp.",
+    tech: ["Python", "GitHub Actions", "SQLite", "Schema Validation", "GitHub Pages"],
+    demo: COMING_SOON, // real: https://rahul9121.github.io/self-updating-data-pipeline
+    github: COMING_SOON, // real: https://github.com/Rahul9121/self-updating-data-pipeline
+    thumbLabel: "AUTO",
+    status: "upcoming",
+    gradient: "linear-gradient(135deg, rgba(182,255,0,.3), rgba(122,44,255,.25))",
+  },
+  {
+    id: "metadata-ingestion",
+    title: "Metadata-Driven Ingestion Framework",
+    description:
+      "ADF-style Python framework where each source (CSV, JSON, or API) is described in config. Handles retries, branching, error handling, run logging, and a lineage page.",
+    tech: ["Python", "YAML Config", "Retries", "Logging", "GitHub Pages"],
+    demo: COMING_SOON, // real: https://rahul9121.github.io/metadata-driven-ingestion
+    github: COMING_SOON, // real: https://github.com/Rahul9121/metadata-driven-ingestion
+    thumbLabel: "INGEST",
+    status: "upcoming",
+    gradient: "linear-gradient(135deg, rgba(122,44,255,.3), rgba(0,240,255,.25))",
+  },
 ];
+
+/** Keep only the first card per id so the grid never shows duplicates. */
+function uniqueProjects(list) {
+  const seen = new Set();
+  return list.filter((p) => {
+    if (!p || !p.id || seen.has(p.id)) return false;
+    seen.add(p.id);
+    return true;
+  });
+}
 
 /* ============================================================================
  * EDIT ME: experience (rendered into #experienceTimeline)
@@ -229,30 +247,44 @@ function renderProjects() {
   const grid = document.getElementById("projectsGrid");
   if (!grid) return;
 
-  grid.innerHTML = PROJECTS.map((p) => {
-    const tech = p.tech
-      .map((t) => `<span class="skill-chip">${escapeHtml(t)}</span>`)
-      .join("");
-    return `
-      <article class="project-card os-window reveal">
+  const cards = uniqueProjects(PROJECTS);
+
+  grid.innerHTML = cards
+    .map((p) => {
+      const upcoming = p.status === "upcoming";
+      const tech = (p.tech || [])
+        .map((t) => `<span class="skill-chip">${escapeHtml(t)}</span>`)
+        .join("");
+      const statusBadge = upcoming
+        ? `<span class="project-status project-status--upcoming">Upcoming</span>`
+        : `<span class="project-status project-status--live">Live</span>`;
+      const actions = upcoming
+        ? `
+            <a class="btn btn-pill btn-outline" href="${escapeHtml(p.demo || COMING_SOON)}">Coming Soon</a>
+            <a class="btn btn-pill btn-outline" href="${escapeHtml(p.github || COMING_SOON)}">GitHub Soon</a>`
+        : `
+            <a class="btn btn-pill btn-cyan" href="${escapeHtml(p.demo)}" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a class="btn btn-pill btn-outline" href="${escapeHtml(p.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>`;
+
+      return `
+      <article class="project-card os-window reveal${upcoming ? " is-upcoming" : ""}">
         <div class="os-titlebar">
           <span class="os-dots" aria-hidden="true"><i></i><i></i><i></i></span>
           <span class="mono">${escapeHtml(p.id)}.exe</span>
           <span class="os-controls" aria-hidden="true">─ □ ×</span>
         </div>
-        <div class="project-thumb" data-label="${escapeHtml(p.thumbLabel)}" style="background:${p.gradient}, repeating-linear-gradient(45deg, rgba(255,255,255,.04) 0 8px, transparent 8px 16px);"></div>
+        <div class="project-thumb" data-label="${escapeHtml(p.thumbLabel)}" style="background:${p.gradient}, repeating-linear-gradient(45deg, rgba(255,255,255,.04) 0 8px, transparent 8px 16px);">${statusBadge}</div>
         <div class="project-body">
           <h3>${escapeHtml(p.title)}</h3>
           <p>${escapeHtml(p.description)}</p>
           <div class="project-tech">${tech}</div>
-          <div class="project-actions">
-            <a class="btn btn-pill btn-cyan" href="${escapeHtml(p.demo)}" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            <a class="btn btn-pill btn-outline" href="${escapeHtml(p.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <div class="project-actions">${actions}
           </div>
         </div>
       </article>
     `;
-  }).join("");
+    })
+    .join("");
 }
 
 /* ---------- Render experience ---------- */

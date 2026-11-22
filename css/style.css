@@ -1095,6 +1095,41 @@ body.menu-open {
   border-radius: 0.35rem;
 }
 
+.project-status {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1;
+  font-family: var(--font-mono);
+  font-size: max(0.68rem, 11px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.project-status--live {
+  color: #021018;
+  background: var(--cyan);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.35);
+}
+
+.project-status--upcoming {
+  color: #1a1200;
+  background: var(--lime);
+  border-color: rgba(182, 255, 0, 0.55);
+  box-shadow: 0 0 12px rgba(182, 255, 0, 0.3);
+}
+
+.project-card.is-upcoming {
+  border-color: rgba(182, 255, 0, 0.28);
+}
+
+.project-card.is-upcoming .project-actions .btn {
+  opacity: 0.92;
+}
+
 .project-body {
   padding: 1rem 1.1rem 1.2rem;
   display: flex;
