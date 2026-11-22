@@ -44,50 +44,105 @@ const PROJECTS = [
     thumbLabel: "BATCH",
     gradient: "linear-gradient(135deg, rgba(255,43,214,.3), rgba(0,240,255,.25))",
   },
+ {
+  id: "streaming-pipeline",
+  title: "Real-Time Event Streaming Pipeline",
+  description:
+    "Kafka and Spark Structured Streaming pipeline that ingests high-volume events, applies windowed aggregations, and lands curated data in Delta Lake.",
+  tech: ["Kafka", "Spark Streaming", "Delta Lake", "PySpark", "Docker"],
+  demo: "https://rahul9121.github.io/realtime-event-streaming",
+  github: "https://github.com/Rahul9121/realtime-event-streaming",
+  thumbLabel: "STREAM",
+  gradient: "linear-gradient(135deg, rgba(0,240,255,.35), rgba(122,44,255,.3))",
+},
+{
+  id: "batch-etl",
+  title: "PySpark Batch ETL Framework",
+  description:
+    "Medallion-style pipeline that ingests, dedupes, and normalizes market data into partitioned Parquet layers, with SQL reconciliation between each layer.",
+  tech: ["PySpark", "Parquet", "Python", "SQL", "Postgres"],
+  demo: "https://rahul9121.github.io/pyspark-batch-etl",
+  github: "https://github.com/Rahul9121/pyspark-batch-etl",
+  thumbLabel: "BATCH",
+  gradient: "linear-gradient(135deg, rgba(255,43,214,.3), rgba(0,240,255,.25))",
+},
+{
+  id: "dbt-warehouse",
+  title: "dbt Analytics Warehouse",
+  description:
+    "Dimensional models with incremental loads, data tests, and auto-generated docs and lineage for a trusted analytics warehouse.",
+  tech: ["dbt", "DuckDB", "SQL", "CI/CD", "GitHub Pages"],
+  demo: "https://rahul9121.github.io/dbt-analytics-warehouse",
+  github: "https://github.com/Rahul9121/dbt-analytics-warehouse",
+  thumbLabel: "WAREHOUSE",
+  gradient: "linear-gradient(135deg, rgba(182,255,0,.28), rgba(0,240,255,.22))",
+},
+{
+  id: "airflow-elt",
+  title: "Airflow ELT with Data Quality Gates",
+  description:
+    "One DAG runs ingest, Spark transform, dbt, and quality checks with retries and failure alerts, and publishes an HTML data-quality report.",
+  tech: ["Airflow", "PySpark", "dbt", "Docker", "pytest"],
+  demo: "https://rahul9121.github.io/airflow-elt-data-quality",
+  github: "https://github.com/Rahul9121/airflow-elt-data-quality",
+  thumbLabel: "ORCH",
+  gradient: "linear-gradient(135deg, rgba(122,44,255,.35), rgba(255,43,214,.22))",
+},
+{
+  id: "lakehouse-lab",
+  title: "Lakehouse and Spark Performance Lab",
+  description:
+    "Benchmarks Parquet, Avro, ORC, and Delta, then measures how partitioning, broadcast joins, and compaction cut Spark runtimes.",
+  tech: ["Delta Lake", "Parquet", "Avro", "ORC", "Spark Tuning"],
+  demo: "https://rahul9121.github.io/lakehouse-spark-performance-lab",
+  github: "https://github.com/Rahul9121/lakehouse-spark-performance-lab",
+  thumbLabel: "LAKEHOUSE",
+  gradient: "linear-gradient(135deg, rgba(0,240,255,.2), rgba(182,255,0,.28))",
+},
+{
+  id: "hive-migration",
+  title: "Hive-to-PySpark Migration and CI/CD",
+  description:
+    "Rewrites HiveQL jobs as PySpark and validates source-to-target counts and key fields, shipped with Docker, Terraform, and GitHub Actions.",
+  tech: ["PySpark", "Hive", "ADLS (Azurite)", "Terraform", "CI/CD"],
+  demo: "https://rahul9121.github.io/hive-to-pyspark-migration",
+  github: "https://github.com/Rahul9121/hive-to-pyspark-migration",
+  thumbLabel: "MIGRATION",
+  gradient: "linear-gradient(135deg, rgba(255,43,214,.28), rgba(122,44,255,.3))",
+},
   {
-    id: "dbt-warehouse",
-    title: "dbt Analytics Warehouse",
-    description:
-      "Dimensional models with incremental loads, data tests, and auto-generated docs and lineage for a trusted analytics warehouse.",
-    tech: ["dbt", "DuckDB", "SQL", "CI/CD", "GitHub Pages"],
-    demo: COMING_SOON, // real: https://rahul9121.github.io/dbt-analytics-warehouse
-    github: COMING_SOON, // real: https://github.com/Rahul9121/dbt-analytics-warehouse
-    thumbLabel: "WAREHOUSE",
-    gradient: "linear-gradient(135deg, rgba(182,255,0,.28), rgba(0,240,255,.22))",
-  },
-  {
-    id: "airflow-elt",
-    title: "Airflow ELT with Data Quality Gates",
-    description:
-      "One DAG runs ingest, Spark transform, dbt, and quality checks with retries and failure alerts, and publishes an HTML data-quality report.",
-    tech: ["Airflow", "PySpark", "dbt", "Docker", "pytest"],
-    demo: COMING_SOON, // real: https://rahul9121.github.io/airflow-elt-data-quality
-    github: COMING_SOON, // real: https://github.com/Rahul9121/airflow-elt-data-quality
-    thumbLabel: "ORCH",
-    gradient: "linear-gradient(135deg, rgba(122,44,255,.35), rgba(255,43,214,.22))",
-  },
-  {
-    id: "lakehouse-lab",
-    title: "Lakehouse and Spark Performance Lab",
-    description:
-      "Benchmarks Parquet, Avro, ORC, and Delta, then measures how partitioning, broadcast joins, and compaction cut Spark runtimes.",
-    tech: ["Delta Lake", "Parquet", "Avro", "ORC", "Spark Tuning"],
-    demo: COMING_SOON, // real: https://rahul9121.github.io/lakehouse-spark-performance-lab
-    github: COMING_SOON, // real: https://github.com/Rahul9121/lakehouse-spark-performance-lab
-    thumbLabel: "LAKEHOUSE",
-    gradient: "linear-gradient(135deg, rgba(0,240,255,.2), rgba(182,255,0,.28))",
-  },
-  {
-    id: "hive-migration",
-    title: "Hive-to-PySpark Migration and CI/CD",
-    description:
-      "Rewrites HiveQL jobs as PySpark and validates source-to-target counts and key fields, shipped with Docker, Terraform, and GitHub Actions.",
-    tech: ["PySpark", "Hive", "ADLS (Azurite)", "Terraform", "CI/CD"],
-    demo: COMING_SOON, // real: https://rahul9121.github.io/hive-to-pyspark-migration
-    github: COMING_SOON, // real: https://github.com/Rahul9121/hive-to-pyspark-migration
-    thumbLabel: "MIGRATION",
-    gradient: "linear-gradient(135deg, rgba(255,43,214,.28), rgba(122,44,255,.3))",
-  },
+  id: "sql-playground",
+  title: "SQL Reconciliation Playground",
+  description:
+    "Run real SQL in the browser on sample trade and ledger data with DuckDB-WASM, no server needed. Ten ready-made queries cover duplicates, cross-system mismatches, sequence gaps, running totals, and latest record per key.",
+  tech: ["DuckDB-WASM", "SQL", "JavaScript", "GitHub Pages"],
+  demo: COMING_SOON, // real: https://rahul9121.github.io/sql-reconciliation-playground
+  github: COMING_SOON, // real: https://github.com/Rahul9121/sql-reconciliation-playground
+  thumbLabel: "SQL",
+  gradient: "linear-gradient(135deg, rgba(0,240,255,.3), rgba(182,255,0,.25))",
+},
+{
+  id: "public-data-pipeline",
+  title: "Self-Updating Public Data Pipeline",
+  description:
+    "Python job on a daily GitHub Actions schedule that pulls a public earthquake feed, validates the schema, loads only new records into a small database, and rebuilds a dashboard with a last-updated timestamp.",
+  tech: ["Python", "GitHub Actions", "SQLite", "Schema Validation", "GitHub Pages"],
+  demo: COMING_SOON, // real: https://rahul9121.github.io/self-updating-data-pipeline
+  github: COMING_SOON, // real: https://github.com/Rahul9121/self-updating-data-pipeline
+  thumbLabel: "AUTO",
+  gradient: "linear-gradient(135deg, rgba(182,255,0,.3), rgba(122,44,255,.25))",
+},
+{
+  id: "metadata-ingestion",
+  title: "Metadata-Driven Ingestion Framework",
+  description:
+    "ADF-style Python framework where each source (CSV, JSON, or API) is described in a config file. It handles retries, conditional branching, error handling, and run logging, and publishes a run-log and lineage page.",
+  tech: ["Python", "YAML Config", "Retries", "Logging", "GitHub Pages"],
+  demo: COMING_SOON, // real: https://rahul9121.github.io/metadata-driven-ingestion
+  github: COMING_SOON, // real: https://github.com/Rahul9121/metadata-driven-ingestion
+  thumbLabel: "INGEST",
+  gradient: "linear-gradient(135deg, rgba(122,44,255,.3), rgba(0,240,255,.25))",
+},
 ];
 
 /* ============================================================================
